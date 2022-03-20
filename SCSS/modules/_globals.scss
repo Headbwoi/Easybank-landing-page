@@ -1,0 +1,120 @@
+//rests
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 100%;
+}
+
+//body fundamentals
+body {
+  width: 100vw;
+  font-size: $font-md;
+  font-family: 'Public sans', sans-serif;
+  line-height: 1.3;
+  font-size: 16px;
+  overflow-x: hidden;
+
+  &.noscroll{
+    overflow: hidden;
+  }
+}
+
+h1,h2,h3{
+  color: $Dark_Blue;  font-weight: 700;
+}
+
+//font-weight for main and sub-heading
+p {
+  font-weight: 300;
+  color: $Grayish_Blue;
+  line-height: 1.6;
+}
+.sub {
+  color: $Dark_Blue;
+  font-weight: 400;
+}
+a{
+  cursor: pointer;
+}
+//utility classes
+
+//flex
+.flex {
+  display: flex;
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+//spacing
+
+.container{
+  max-width: 69.4375rem;
+  margin: 0 auto;
+
+  &__p{
+    padding-top: 2.25rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.25rem;
+    padding-left: 1.5rem;
+  }
+  &__py{
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+  &__px{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  &__pt{
+    padding-top: 2.25rem;
+  }
+  &__pr{
+    padding-right: 1.5rem;
+  }
+  &__pb{
+    padding-bottom: 2.25rem;
+  }
+  &__pl{
+    padding-left: 1.5rem;
+  }
+}
+.m-b{
+  margin-bottom: 3.5rem;
+}
+// classes to hide for mobile and desktop
+@media (min-width: 64rem) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+@media (max-width: 63.5rem) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+.btn {
+  color: $Light_Grayish_Blue;
+  background-image: linear-gradient(to right, $Lime_Green, $Bright_Cyan);
+  font-size: $font-sm;
+  padding: 0.75rem 2.1875rem;
+  border-radius: 34px;
+  &:hover{
+    opacity: .65;
+  }
+}

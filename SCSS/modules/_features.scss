@@ -1,0 +1,70 @@
+.features{
+    background-color: $Light_Grayish_Blue;
+    text-align: center;
+
+    @media (min-width: 48rem) {
+        text-align: left;
+    }
+
+    &__text{
+        h2{
+            font-size: 1.5rem;
+            padding: 0 2rem;
+            padding-bottom: 1.25rem;
+        }
+
+        p{
+            font-size: $font-sm;
+        }
+        @media (min-width: 48rem) {
+            h2{
+                padding-left: 0;
+            }
+        }
+        @media (min-width: 64rem){
+            h2{
+                padding-top: 5rem;
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: $font-md;
+                width: 60%;
+            }
+        }
+    }
+
+    &__flex{
+
+        @media (min-width: 48rem) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+        }
+        @media (min-width: 64rem) {
+            display: flex;
+            flex: 1;
+        }
+        .card{
+            margin-bottom: 1.875rem;
+            &:not(:last-child){
+                margin-right: 1.125rem;
+            }
+            .image{
+                margin-bottom: 1.75rem; 
+            }
+            .title{
+                font-size: $font-md;
+                margin-bottom: 1.125rem;
+            }
+            .info{
+                p{
+                    font-size: $font-sm;
+                    @media (min-width: 64rem){
+                        font-size: 1rem;
+                    }
+                }
+                
+            }
+        }
+    }
+}

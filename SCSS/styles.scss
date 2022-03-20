@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=PublicOpen+Sans&display=swap");
+
+
+@import "modules/variables";
+@import "modules/animation";
+
+@import "modules/globals";
+@import "modules/header";
+@import "modules/hero";
+@import "modules/features";
+@import "modules/article";
+@import "modules/footer";
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
